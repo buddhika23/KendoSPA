@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Active" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="Annually" xml:space="preserve">
+    <value>Annually</value>
+  </data>
+  <data name="Archived" xml:space="preserve">
+    <value>Archived</value>
+  </data>
+  <data name="CompletedOnTime" xml:space="preserve">
+    <value>Completedontime</value>
+  </data>
+  <data name="CompletedOverdue" xml:space="preserve">
+    <value>Completedoverdue</value>
+  </data>
+  <data name="ConfirmedLoss" xml:space="preserve">
+    <value>Confirmedloss</value>
+  </data>
+  <data name="ControlPoint" xml:space="preserve">
+    <value>Controlpoint</value>
+  </data>
+  <data name="ControlPointInstanceCreated" xml:space="preserve">
+    <value>Controlpointinstancecreated</value>
+  </data>
+  <data name="ControlPointInstanceOverDued" xml:space="preserve">
+    <value>Controlpointinstanceoverdued</value>
+  </data>
+  <data name="ControlPointInstancePendingReminder" xml:space="preserve">
+    <value>Controlpointinstancependingreminder</value>
+  </data>
+  <data name="DatePicker" xml:space="preserve">
+    <value>Datepicker</value>
+  </data>
+  <data name="Deleted" xml:space="preserve">
+    <value>Deleted</value>
+  </data>
+  <data name="Done" xml:space="preserve">
+    <value>Done</value>
+  </data>
+  <data name="DropDown" xml:space="preserve">
+    <value>Dropdown</value>
+  </data>
+  <data name="Duplicate" xml:space="preserve">
+    <value>Duplicate</value>
+  </data>
+  <data name="FALSE" xml:space="preserve">
+    <value>False</value>
+    <comment>false doesnt count as a valid key, so it comess as uppser case</comment>
+  </data>
+  <data name="InActive" xml:space="preserve">
+    <value>Inactive</value>
+  </data>
+  <data name="Incident" xml:space="preserve">
+    <value>Incident</value>
+  </data>
+  <data name="IncidentCreated" xml:space="preserve">
+    <value>Incidentcreated</value>
+  </data>
+  <data name="IncidentOverDued" xml:space="preserve">
+    <value>Incidentoverdued</value>
+  </data>
+  <data name="IncidentPendingReminder" xml:space="preserve">
+    <value>Incidentpendingreminder</value>
+  </data>
+  <data name="IncidentRegistered" xml:space="preserve">
+    <value>Incidentregistered</value>
+  </data>
+  <data name="InputGiven" xml:space="preserve">
+    <value>Inputgiven</value>
+  </data>
+  <data name="InputNotGiven" xml:space="preserve">
+    <value>Inputnotgiven</value>
+  </data>
+  <data name="Monthly" xml:space="preserve">
+    <value>Monthly</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="NoLoss" xml:space="preserve">
+    <value>Noloss</value>
+  </data>
+  <data name="NotApplicable" xml:space="preserve">
+    <value>Notapplicable</value>
+  </data>
+  <data name="NumericTextbox" xml:space="preserve">
+    <value>Numerictextbox</value>
+  </data>
+  <data name="Overdue" xml:space="preserve">
+    <value>Overdue</value>
+  </data>
+  <data name="Pending" xml:space="preserve">
+    <value>Pending</value>
+  </data>
+  <data name="PotentialLoss" xml:space="preserve">
+    <value>Potentialloss</value>
+  </data>
+  <data name="Processed" xml:space="preserve">
+    <value>Processed</value>
+  </data>
+  <data name="Project" xml:space="preserve">
+    <value>Project</value>
+  </data>
+  <data name="ProjectActivated" xml:space="preserve">
+    <value>Projectactivated</value>
+  </data>
+  <data name="ProjectOverDued" xml:space="preserve">
+    <value>Projectoverdued</value>
+  </data>
+  <data name="ProjectPendingReminder" xml:space="preserve">
+    <value>Projectpendingreminder</value>
+  </data>
+  <data name="ProjectTask" xml:space="preserve">
+    <value>Projecttask</value>
+  </data>
+  <data name="ProjectTaskActivated" xml:space="preserve">
+    <value>Projecttaskactivated</value>
+  </data>
+  <data name="ProjectTaskOverDued" xml:space="preserve">
+    <value>Projecttaskoverdued</value>
+  </data>
+  <data name="ProjectTaskPendingReminder" xml:space="preserve">
+    <value>Projecttaskpendingreminder</value>
+  </data>
+  <data name="Quarterly" xml:space="preserve">
+    <value>Quarterly</value>
+  </data>
+  <data name="Reviewed" xml:space="preserve">
+    <value>Reviewed</value>
+  </data>
+  <data name="Scheduled" xml:space="preserve">
+    <value>Scheduled</value>
+  </data>
+  <data name="SemiAnnually" xml:space="preserve">
+    <value>Semiannually</value>
+  </data>
+  <data name="TaskCreated" xml:space="preserve">
+    <value>Taskcreated</value>
+  </data>
+  <data name="TextArea" xml:space="preserve">
+    <value>Textarea</value>
+  </data>
+  <data name="TextBox" xml:space="preserve">
+    <value>Textbox</value>
+  </data>
+  <data name="TRUE" xml:space="preserve">
+    <value>True</value>
+  </data>
+  <data name="IncidentSignStatusException" xml:space="preserve">
+    <value>IncidentSignStatusException-EN</value>
+  </data>
+  <data name="Normal" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="IncidentRef" xml:space="preserve">
+    <value>/ Ref.No :</value>
+  </data>
+  <data name="AllSurvey" xml:space="preserve">
+    <value>All Surveys</value>
+  </data>
+  <data name="Closed" xml:space="preserve">
+    <value>Closed</value>
+  </data>
+  <data name="Draft" xml:space="preserve">
+    <value>Draft</value>
+  </data>
+  <data name="Published" xml:space="preserve">
+    <value>Published</value>
+  </data>
+</root>

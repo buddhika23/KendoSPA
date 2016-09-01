@@ -1,0 +1,131 @@
+﻿<header class="header app-header">
+    <!--<div class="sidebar-toggle-box opened ">
+        <div data-original-title="Toggle Navigation" data-placement="right" class="fa fa-bars tooltips"></div>
+    </div>-->
+
+    <!--logo start-->
+    <!--logo end-->
+
+    <div class="top-nav ">
+        <ul class="nav pull-right top-menu">
+            <!-- notification dropdown end --> <!--style="cursor: help;" data-bind="visible:isAdminMode, events:{click:onHelpdesk}"-->
+            <li><a class="app-btn-hellp adminonly"><span class="fa fa-question-circle"></span></a></li>
+            <!-- user login dropdown start-->
+            <li class="dropdown">
+                <a data-toggle="dropdown" class="dropdown-toggle app-btn-user-profile" href="#"> <img alt="" src="../../Content/custom/img/profile-XS.jpg"></a>
+                <ul class="dropdown-menu extended logout">
+                    <div class="log-arrow-up"></div>
+                    <div class="user-profile-wrapper">
+                        <div class="user-profile-image">
+                            <img src="../../Content/custom/img/profile-L.jpg" />
+                        </div>
+                        <div class="user-profile-info">
+                            <div class="user-profile-name"><span data-bind="text:fullName"/></div>
+                            <div class="user-profile-email"><span data-bind="text:email"/></div>
+                        </div>
+                        <!--<div class="user-profile-info">
+                            <div class="user-profile-email"><a data-bind="attr:{href:portalUrl}">Old Portal</a></div>
+                        </div>-->
+                    </div>
+                    <div class="user-profile-footer">
+                        <div class="adminonly user-profile-switch" data-bind="visible:isAdmin, events:{click:onUserClick}"><a id="linkUserSwitch" href="#/user/home"><i class="fa fa-user"></i>&nbsp; t-UserView#</a></div>
+                        <div class="user-profile-switch" data-bind="visible:isAdmin, events:{click:onAdminClick}"><a id="linkUserSwitch" class="useronly" data-bind="attr: { href: routeUrl}"><i class="fa fa-user"></i>&nbsp; t-AdminView#</a></div>
+
+                        <div class="user-profile-logout">
+                            <a data-bind="attr:{href:logoutUrl}"><i class="fa fa-key"></i> t-Logout#</a>
+                        </div>
+                    </div>
+
+                </ul>
+            </li>
+        </ul>
+        <div class="nav pull-right top-menu" style="position:relative; top:10px;">
+            <input id="languageCombo" class="language-combo" data-role="dropdownlist" data-auto-bind="true" data-value-primitive="true"
+                   data-text-field="name" data-value-field="id"
+                   data-bind="source:languageList, value:selectedLanguage, events:{change:onLanguageChanged}" />
+
+            <!--<select id="languageCombo" class="language-combo" onchange="onLanguageChanged(this)">
+            <option value="nb-NO">Norsk</option>
+            <option value="en-US">English</option>
+        </select>-->
+        </div>
+    </div>
+</header>
+
+<aside id="sideMenuContrainer">
+    <!-- Side bar Contrainer -->
+
+
+</aside>
+<!--sidebar end-->
+<!--main content start-->
+<section id="main-content">
+    <section class="wrapper site-min-height">
+        <div class="panel-overlay-tree-1 none"></div>
+        <div class="tray-1-1-tree none">
+            <div class="app-tree-header">
+                <h4>Tree panel title</h4>
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-white"><i class="fa fa-search"></i></button>
+                    </span>
+                    <input type="text" class="form-control" id="treeViewSearchInput" />
+                </div>
+            </div>
+            <div class="app-tree-body">
+                <ul id="treeview">
+                    <li data-expanded="true">
+                        My Web Site
+                        <ul>
+                            <li data-expanded="true">
+                                images
+                                <ul>
+                                    <li>logo.png</li>
+                                    <li>body-back.png</li>
+                                    <li>my-photo.jpg</li>
+                                </ul>
+                            </li>
+                            <li data-expanded="true">
+                                resources
+                                <ul>
+                                    <li data-expanded="true">
+                                        pdf
+                                        <ul>
+                                            <li>brochure.pdf</li>
+                                            <li>prices.pdf</li>
+                                        </ul>
+                                    </li>
+                                    <li>zip</li>
+                                </ul>
+                            </li>
+                            <li>about.html</li>
+                            <li>contacts.html</li>
+                            <li>index.html</li>
+                            <li>portfolio.html</li>
+                        </ul>
+                    </li>
+                    <li>Another Root</li>
+                </ul>
+            </div>
+            <div class="app-tree-footer">
+                <a class="btn btn-primary btn-xs">Close</a>
+            </div>
+        </div>
+        
+        <!-- End -->
+        <!-- page start-->
+        <div id="content" class="">
+            <!-- The application is rendered here -->
+        </div>
+        <!-- page end-->
+        <div id="popup" class="">
+
+        </div>
+
+
+    </section>
+</section>
+<!--main content end-->
+
+
+

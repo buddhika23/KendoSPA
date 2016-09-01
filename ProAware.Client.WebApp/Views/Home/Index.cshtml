@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+@using System.Resources;
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Kendo SPA</title>
+
+    <link rel="icon" type="image/png" href="../../Content/custom/img/favicon.ico" />
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,300italic,400italic,500italic,700italic' rel='stylesheet' type='text/css'>
+    <link href="../../Content/kendo/2016.2.504/kendo.common-bootstrap.min.css" rel="stylesheet" />
+    <link href="../../Content/kendo/2016.2.504/kendo.bootstrap.mobile.min.css" rel="stylesheet" />
+    <link href="../../Content/kendo/2016.2.504/kendo.bootstrap.min.css" rel="stylesheet" />
+  
+    @*<link rel="stylesheet" href="../../Content/kendo/2016.2.504/kendo.dataviz.min.css" />*@
+    <link rel="stylesheet" href="../../Content/kendo/2016.2.504/kendo.dataviz.bootstrap.min.css" />
+    <link href="../../Content/animate.css" rel ="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/spin.js/1.2.7/spin.min.js"></script>
+
+    <!-- Custom CSS START -->
+    <link rel="stylesheet" type="text/css" href="../../Content/custom/custom.css">
+    <link rel="stylesheet" type="text/css" href="../../Content/custom/elements.css">
+    <link rel="stylesheet" type="text/css" href="../../Content/custom/custom-css.css">
+
+    <link type="text/css" href="../../Content/toastr.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="../../Scripts/modernizr-2.8.3.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../Content/custom/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../../Content/custom/css/style.css" rel="stylesheet">
+    @*<link href="../Content/custom/css/style.css" rel="stylesheet">*@
+    <link href="../../Content/custom/css/style-responsive.css" rel="stylesheet" />
+    @*<link href="../Content/custom/css/style-responsive.css" rel="stylesheet" />*@
+
+    <script type="text/javascript">
+        function onLanguageChanged(e) {
+            console.log(e.value);
+            window.locale = e.value;
+            localStorage.setItem('locale', e.value);
+            require.config({
+                config: {
+                    locale: e.value
+                }
+            });
+            require(['app']);
+            location.reload();
+        }
+        if (localStorage.getItem('locale') === null) {
+            localStorage.setItem('locale', 'en-US');
+        }
+
+        else if (localStorage.getItem('locale').toString().toUpperCase() === 'EN-US') {
+            localStorage.setItem('locale', 'en-US');
+        }
+        else if (localStorage.getItem('locale').toString().toUpperCase() === 'NB-NO') {
+            localStorage.setItem('locale', 'nb-NO');
+        }
+
+        localStorage.setItem('fullName', 'Test User');
+        localStorage.setItem('email', 'test@email.com');
+    </script>
+
+
+</head>
+<body class="has-js">
+    <section id="container">
+        <!--header start-->
+        <div id="applicationContainer">
+            <!-- The application is rendered here -->
+        </div>
+    </section>
+
+    <script src="../../Scripts/require.js" data-main="../../App/main"></script>
+
+    <script src="~/App/constants.js"></script>
+
+    <link href="~/Content/custom/css/font-awesome.css" rel="stylesheet" />
+
+    @*Page loader animation for initial load*@
+    <div id="pageLoader">
+        <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="12" />
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                    <!--<feBlend in2="goo" in="SourceGraphic" result="mix" />-->
+                </filter>
+            </defs>
+        </svg>
+    </div>
+</body>
+</html>

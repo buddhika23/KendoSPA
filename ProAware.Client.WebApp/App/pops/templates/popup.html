@@ -1,0 +1,220 @@
+﻿<div id="controlPointAddEditPanel" class="overlay overlay-main none"></div>
+<div id="controlPointAddEditForm" class="drawer drawer-main none">
+    <div class="col-sm-12 col-md-12 drawer-tab">
+        <ul class="nav nav-tabs" data-tabs="tabs">
+            <li class="active" id="generalTab"><a href="#divControlPointDetail" data-toggle="tab">t-Detail#</a></li>
+            <li id="historyTab"><a data-bind="visible:hasId" href="#divControlPointHistory" data-toggle="tab">t-History#</a><a data-bind="invisible:hasId">t-History#</a></li>
+            <li id="attachmentTab"><a data-bind="visible:hasId" href="#divControlPointAttachment" data-toggle="tab">t-Attachments#/t-Log#</a><a data-bind="invisible:hasId">t-Attachments#/t-Log#</a></li>
+
+        </ul>
+    </div>
+
+    <div class="drawer-header header-with-tab">
+        t-ControlPoint# - <span data-bind="text:selectedRow.Name"></span>
+    </div>
+    <div class="drawer-tab-content">
+        <div class="col-md-12 ">
+            <div class="tab-content content-with-tab">
+
+                <div class="tab-pane row active fade in col-md-12 drawer-tab-inner-content" id="divControlPointDetail">
+
+                    <div class="col-md-12 drawer-tab-inner-content">
+
+                        <div class="form-group">
+                            <label id="labelName" for="txtName"> t-Name# :</label>
+                            <div class="required">
+                                <input class="k-textbox control-width" type="text" name="t-Name#" id="txtName"
+                                       data-bind="disabled:isInReadOnlyMode, value:selectedRow.Name" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label id="labelDescription" for="txtDescription"> t-Description# :</label>
+                            <div class="required">
+                                <textarea data-autoresize rows="2" class="k-textbox control-width" style="text-indent: 5px;" name="t-Description#" id="txtDescription"
+                                          data-bind="disabled:isInReadOnlyMode, value:selectedRow.Description" required></textarea>
+
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <label id="labelProcess" for="txtProcess"> t-Process# :</label>
+                            <div>
+                                <input class="k-textbox control-width" type="text" name="txtProcess" id="txtProcess" placeholder="t-ProcessPlaceHolder#"
+                                       data-bind="disabled:isInReadOnlyMode, value:selectedRow.ProcessName, events:{focus:processFocus}" />
+                            </div>
+                            <div data-role="treelist" data-selectable="true"
+                                 data-columns="[
+                                { 'field': 'Name', 'title':' ' }
+                             ]"
+                                 data-bind="source:processCollection, visible:processTreeVisible, events:{ change:processSelection }">
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <label id="labelDepartment" for="txtDepartment"> t-Department# :</label>
+                            <div class="required">
+                                <input class="k-textbox control-width" type="text" name="t-Department#" id="txtDepartment" placeholder="t-RolePlacehoder#"
+                                       data-bind="disabled:isInReadOnlyMode, value:selectedRow.DepartmentName, events:{focus:departmentFocus}" required />
+                            </div>
+                            <div data-role="treelist" data-selectable="true"
+                                 data-columns="[
+                                { 'field': 'Name', 'title':' ' }
+                             ]"
+                                 data-bind="source:departmentCollection, visible:departmentTreeVisible, events:{ change:departmentSelection }">
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <label id="labelAssignedTo" for="cmbAssignedTo"> t-AssignedTo# :</label>
+                            <div class="required">
+                                <input id="cmbAssignedTo" name="t-AssignedTo#" class="control-width" data-animation="false"  data-role="combobox" data-auto-bind="true" data-value-primitive="true" data-filter="contains"
+                                       data-text-field="DisplayName" data-value-field="Id" required data-matchesMsg="t-InvalidValue#"
+                                       data-bind="disabled:isInReadOnlyMode, source:userCollection,value:selectedRow.AssignedToUserId" />
+
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label id="labelArea" for="dropdownArea"> t-AreaName# :</label>
+                            <div class="required">
+                                <input id="dropdownArea" name="t-AreaName#" class="control-width" data-animation="false"  data-role="combobox" data-auto-bind="false" data-value-primitive="true" data-filter="contains"
+                                       data-text-field="Name" data-value-field="Id" required data-matchesMsg="t-InvalidValue#"
+                                       data-bind="disabled:isInReadOnlyMode, value: selectedRow.AreaId, source: areasList" />
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-6 p-l-0">
+                            <div class="form-group">
+                                <label id="labelSchedule" for="dropdownSchedule"> t-Schedule# :</label>
+                                <div class="required">
+                                    <input id="dropdownSchedule" name="t-Schedule#" class="control-width" data-animation="false" data-role="combobox" data-auto-bind="true" data-value-primitive="true"
+                                           data-filter="contains"
+                                           data-text-field="Name" data-value-field="Id" required data-matchesMsg="t-InvalidValue#"
+                                           data-bind="enabled:canSet,  value: selectedRow.ScheduleId, source: scheduleList, events:{change:onScheduleChange}" />
+                                </div>
+                            </div>
+
+                            <div id="inDuemonthSection" data-bind="visible:isDueVisible" class="form-group">
+                                <label id="DueIn" for="dropDownDuemonths1"> t-DueIn# :</label>
+                                <div id="inDuemonthSection1" class="required" data-bind="visible:isSemiAnnualVisible">
+                                    <input id="dropDownDuemonths1" name="t-DueIn#" data-max="2" data-role="numerictextbox" data-format="n0"
+                                           data-value-primitive="true" data-min="0" data-auto-bind="true"
+                                           data-bind="value:selectedRow.DueInMonths, enabled:canSet, events:{change:numericChangeTriggers}" />
+                                    <span id="Months" data-bind="html:affectedMonths" style="display: inline-block; margin-top:10px;margin-left:15px;"></span>
+
+                                </div>
+                                <div id="inDuemonthSection2" class="required" data-bind="visible:isQuaterVisible">
+                                    <input id="dropDownDuemonths2" name="t-DueIn#" data-role="numerictextbox" data-format="n0"
+                                           data-value-primitive="true" data-max="5" data-min="0" data-auto-bind="true"
+                                           data-bind="value:selectedRow.DueInMonths, enabled:canSet, events:{change:numericChangeTriggers}" />
+                                    <span id="Months" data-bind="html:affectedMonths" style="display: inline-block; margin-top:10px;margin-left:15px;"></span>
+
+                                </div>
+                                <div id="inDuemonthSection3" class="required" data-bind="visible:isMonthVisible">
+                                    <input id="dropDownDuemonths3" name="t-DueIn#" data-role="numerictextbox" data-format="n0"
+                                           data-value-primitive="true" data-max="11" data-min="0" data-auto-bind="true"
+                                           data-bind="value:selectedRow.DueInMonths, enabled:canSet, events:{change:numericChangeTriggers}" />
+                                    <span id="Months" data-bind="html:affectedMonths" style="display: inline-block; margin-top:10px;margin-left:15px;"></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-6 no-padding">
+                            <div class="form-group">
+                                <label id="labelStartDate" for="StartPeriod"> t-StartPeriod# :</label>
+                                <div class="required">
+                                    <input class="control-width" name="t-StartPeriod#" id="StartPeriod" data-animation="false" data-role="combobox" data-auto-bind="true"
+                                           data-value-primitive="true" data-culture="no" required
+                                           data-bind="enabled:canSet, value: selectedRow.SchedulerStartDate, source:rangeList, events:{dataBound:onSchedulePeriodDataBound}">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group clear-both">
+                            <label id="labelStatus" for="dropdownStatus"> t-Status# :</label>
+                            <div class="required">
+                                <input id="dropdownStatus" name="t-Status#" class="control-width" data-animation="false"  data-role="combobox" data-auto-bind="true" data-value-primitive="false" data-filter="contains"
+                                       data-text-field="Name" data-value-field="Id" required
+                                       data-bind="disabled:isInReadOnlyMode, value: selectedRow.StatusId, source: statuList, events:{change:onStatusChange} " />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="checkbox" id="chkIsProjectAdmin" class="k-checkbox"
+                                   data-bind="disabled:isInReadOnlyMode, checked:selectedRow.IsClientQuestionsVisible">
+                            <label class="k-checkbox-label" for="chkIsProjectAdmin">t-ClientQuestionVisible#</label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="tab-pane row fade in col-md-12 drawer-tab-inner-content" id="divControlPointHistory">
+                    <div class="col-md-12 drawer-tab-inner-content">
+
+                        <div id="historyGrid" class="app-grid-admin-p app-grid-admin-b" data-role="grid"
+                             data-scrollable="true"
+                             data-sortable="true" data-groupable="true"
+                             data-auto-bind="false"
+                             data-columns="[
+                                { 'field': 'ScheduledDate', 'title': 't-ScheduledDate#' },
+                                { 'field': 'DueDate', 'title':'t-DueDate#'},
+                                { 'field': 'CompletedDate', 'title':'t-CompletedDate#'},
+                                { 'field': 'ExecutionStatusName', 'title':'t-Status#' },
+                             ]" data-bind="source: controlPointInstances">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-12 row tab-pane fade drawer-tab-inner-content" id="divControlPointAttachment">
+
+                    <div class="form-group drawer-r-o-area  col-md-12 content">
+                        <div class="col-md-1 no-padding"><i class="fa fa-paperclip attchment-icon mr-top-5"></i></div>
+                        <div class="col-md-3"><label class="mr-top-5"> <span data-bind="html:attachmentCount"></span></label></div>
+                        <div class="col-md-8">
+                            <button id="txtAttachments" class="k-button btn btn-primary pull-right log-attachment-buttons-right" name="txtAttachments"
+                                    data-bind="events: {click : attachmentFocus}">
+                                t-FileBrowser#
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="form-group drawer-r-o-area  col-md-12 ">
+                        <div class="col-md-1 no-padding"><i class="fa fa-book attchment-icon mr-top-5"></i></div>
+                        <div class="col-md-5"><label class="mr-top-5"> <span data-bind="html:controlPointLogCount"></span></label></div>
+                        <div class="col-md-6">
+                            <button id="btnUserLogs" class="k-button btn btn-primary pull-right log-attachment-buttons-right" name="btnUserLogs"
+                                    data-bind="events: {click : onShowUserLogs}">
+                                t-Log#
+                            </button>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="drawer-footer">
+        <button class="k-button k-primary" type="button" data-bind="events: {click: onSave},disabled:isInReadOnlyMode, invisible:isUserCardView" id="btnSave">
+            t-Save#
+        </button>
+        <button type="button" class="k-button" data-bind="events: {click: onCancel}" id="btnCancel">
+            t-Cancel#
+        </button>
+    </div>
+
+</div>
+
+<script>
+    jQuery.each(jQuery('textarea[data-autoresize]'), function () {
+        var offset = this.offsetHeight - this.clientHeight;
+
+        var resizeTextarea = function (el) {
+            jQuery(el).css('height', 'auto').css('height', el.scrollHeight + offset);
+        };
+        jQuery(this).on('keyup input', function () { resizeTextarea(this); }).removeAttr('data-autoresize');
+    });
+</script>

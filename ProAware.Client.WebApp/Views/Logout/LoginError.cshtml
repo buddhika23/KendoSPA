@@ -1,0 +1,78 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html hola_ext_inject="disabled">
+<head>
+    <title>ProAware - Login error</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <!-- Custom CSS START -->
+    <link rel="stylesheet" type="text/css" href="../Content/custom/custom.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../Content/custom/css/bootstrap.css" rel="stylesheet">
+   
+    <!-- Google fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Chewy|Delius' rel='stylesheet' type='text/css'>
+
+    <style type="text/css">
+        body {
+            background: #f1f1f1;
+        }
+
+        .wrap {
+            margin: 10% auto;
+            width: 80%;
+            background:#fff;
+        }
+        h2{
+            font-family: 'Chewy', cursive;
+        }
+        .error-details{
+            font-family: 'Delius', cursive;
+            font-size:20px;
+        }
+
+    </style>
+</head>
+<body>
+
+
+    
+    <div class="wrap">
+        
+        <div class="col-md-12" style="text-align:center;">
+            @*<h2>
+                401 - Authentication Failed
+            </h2>*@
+            <div class="error-details">
+                Sorry, ProAware couldn't find your record! Please contact you system administrator for more details.<br />
+                <a onclick="onGoback()" href="#" class="ag-3d_button orange">Go Back </a>
+            </div>
+            
+               
+            
+        </div>
+        <div class="col-md-12">
+            @*<img src="~/Content/custom/img/404-02.png" style="width:40%;" />*@
+
+            <img src="~/Content/custom/img/404-04.png" style="width:40%;" />
+            @*<img src="~/Content/custom/img/404-03.png" style="width:40%;" />*@
+        </div>
+        
+        
+    </div>
+
+
+</body>
+</html>
+
+<script type="text/javascript">
+    function onGoback() {
+        location.href = window.location.protocol + '//' + window.location.host + '/Auth/LogOut?redirect=' + window.location.protocol + '//' + window.location.host;
+    }
+</script>

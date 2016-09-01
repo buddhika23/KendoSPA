@@ -1,0 +1,52 @@
+﻿<!doctype html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8" />
+        <title>Test Runner</title>
+        
+        <link rel="shortcut icon" type="image/png" href="../../Content/jasmine/jasmine_favicon.png">
+        <link rel="stylesheet" type="text/css" href="../../Content/jasmine/jasmine.css">
+        <script type="text/javascript" src="../../Scripts/jasmine/jasmine.js"></script>
+        <script type="text/javascript" src="../../Scripts/jasmine/jasmine-html.js"></script>
+        <script type="text/javascript" src="../../Scripts/jasmine/console.js"></script>
+        <script type="text/javascript" src="../../Scripts/jasmine/boot.js"></script>
+        
+        <script>
+            var require = {
+              
+                paths: {
+                    "enums": "Common/enums",
+                    "T": "Tests",
+                    
+
+                },
+     
+            }
+        </script>
+        <script src="../../Scripts/require.js"></script>
+    </head>
+    <body>
+
+        <script>
+            
+            require(['../require-config'], function() {
+                require(
+                    [
+                        'T/spec/enums',
+                        'T/spec/DateUtil',
+                        'T/spec/projectsMainAdmin',
+                        'T/spec/taskMainAdmin',
+                        'T/spec/controlPointViewUser',
+                         'T/spec/views',
+                        'T/spec/learnJasmine'
+
+                    ],
+                    function () {
+                        //jasmine.getEnv().addReporter(new jasmine.HtmlReporter());
+                        jasmine.getEnv().execute();
+                    });
+            });
+        </script>
+
+    </body>
+</html>

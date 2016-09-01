@@ -1,0 +1,1842 @@
+html {
+    overflow-y: hidden !important;
+   -ms-overflow-style:none !important;
+    -ms-scroll-limit: 0 0 0 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/*html:hover, body:hover {
+        overflow-y: hidden !important;
+        -ms-overflow-style:none !important;
+    }*/
+
+html, body {
+height: 100%;
+overflow-y: hidden !important;
+-ms-overflow-style:none !important;
+}
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-overflow-style:none !important;
+    overflow-y: hidden !important;
+    -ms-scroll-limit: 0 0 0 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 250%;
+}
+
+.none {
+    display: none !important;
+}
+
+.clear-both {
+    clear: both !important;
+}
+
+.app-header {
+    background: #03a9f4;
+    border-bottom: 1px solid #03a9f4;
+    color: #fff !important;
+}
+
+.app-header-secondary {
+    background-color: #fafafa;
+    height: 54px;
+    box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.26);
+    position: fixed;
+    font-size: 24px;
+    top: 60px;
+    z-index: 10004;
+    color: #fff !important;
+    font-weight: 400;
+    line-height: 48px;
+    width: 100%;
+}
+
+#sidebar {
+    background: #ffffff;
+    border-right: 1px solid #e1e1e1;
+    z-index: 30000;
+}
+
+.app-btn-hellp {
+    margin-right: 20px !important;
+}
+
+    .app-btn-hellp span {
+        font-size: 34px;
+    }
+
+/* App icons */
+
+.icon-control-point {
+    background-image: url(img/icon-control-point.svg);
+}
+
+.control-width {
+    width: 100%;
+}
+
+.close {
+    font-size: 48pt;
+    margin-top: -20px;
+}
+/* App commons */
+.mr-l-40pc {
+    margin-left:300px;
+}
+.-mr-t-05 {
+    margin-top: -5px;
+}
+
+.mr-t-10 {
+    margin-top: 10px;
+}
+
+.mr-t-20 {
+    margin-top: 20px;
+}
+
+.mr-t-38 {
+    margin-top: 38px;
+}
+
+.mr-b-10 {
+    margin-bottom: 10px;
+}
+
+.mr-b-20 {
+    margin-bottom: 20px;
+}
+
+.mr-r-5 {
+    margin-bottom: 5px;
+}
+
+.page-top-space-1 {
+    margin-top: 39px;
+}
+
+.nicescroll-rails {
+    margin-left: 14px;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.p-t-25{
+    padding-top:25px;
+}
+
+.p-r-10{padding-right:10px;}
+ 
+.p-l-0{padding-left:0 !important;}
+
+.p-l-30{padding-left:30px !important;}
+
+.p-b-10{padding-bottom:10px !important;}
+
+/* RESTES */
+
+/*TODO:uncomment after kendo bootstrap css test*/
+/*.k-widget, .k-button {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    background: none !important;
+}*/
+
+.k-tooltip {
+    background-color: rgba(249, 249, 249, 1) !important;
+    color: #000000 !important;
+}
+
+
+/*TODO:uncomment after kendo bootstrap css test*/
+/*.k-multiselect .k-button {
+    color: rgba(3, 168, 243, 1);
+}*/
+
+.nicescroll-rails {
+    opacity: 1 !important;
+}
+
+/* Settings Page */
+/*.app-settings-areas {
+    border: 2px solid #e8e8e8;
+    border-radius: 5px;
+    height: 90px;
+    margin-bottom: 15px;
+    background-color: #fff;
+}*/
+
+/*TODO:uncomment after kendo bootstrap css test*/
+/*.app-settings-areas .k-textbox {
+    margin-bottom: 0px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #a9a9a9;
+}*/
+
+.app-settings-areas .edit-buttons {
+    text-align: right;
+}
+
+    .app-settings-areas .edit-buttons button {
+        width: 32px;
+        padding: 7px !important;
+        font-size: 24px;
+        border: none;
+    }
+
+.app-area-listview {
+    border: none;
+}
+
+.app-settings-areas-add-btn {
+    border: 2px dashed #e8e8e8;
+    min-height: 65px;
+    width: 100%;
+    display: inline-block;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+    .app-settings-areas-add-btn > .fa-plus {
+        text-align: center !important;
+        display: block;
+        margin: 18px;
+        font-size: 15pt;
+    }
+
+    .app-settings-areas-add-btn:hover {
+        border-color: #03a9f4;
+        cursor: pointer;
+    }
+
+    .app-settings-areas-add-btn a {
+        position: absolute;
+        right: 50%;
+        bottom: 40%;
+    }
+
+
+
+/*Hide kendo loading mask, to show custom one*/
+.k-loading-mask {
+    /*Hide fadein() animation on grid refresh*/
+    display: none !important;
+    visibility: hidden !important;
+    background-color: transparent !important;
+    opacity: 0.0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+}
+
+/* Quick fix - Consider when css refactoring */
+#ReportGridArea {
+    font-weight: 100 !important;
+}
+
+.k-tabstrip-wrapper .app-tabs-a .custom_tabs_with_grid {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-top: 0px !important;
+}
+
+    .k-tabstrip-wrapper .app-tabs-a .custom_tabs_with_grid .k-header a {
+        color: #121212;
+    }
+
+.custom_tabs_with_grid .app-tabs-a-body {
+    margin-top: -18px !important;
+}
+
+.group-fld {
+    margin-bottom: 30px;
+}
+
+    .group-fld .k-textbox {
+        margin-bottom: 0px;
+    }
+
+/* user login dropdown*/
+
+.float-l {
+    float: left !important;
+}
+
+.float-r {
+    float: right !important;
+}
+
+.user-profile-wrapper {
+    padding: 10px;
+    white-space: nowrap;
+    float: left;
+}
+
+.user-profile-image {
+    /*background-image:url('img/profile-L.jpg');*/
+    -webkit-background-size: 80px 80px;
+    background-size: 80px 80px;
+    border: none;
+    vertical-align: top;
+    height: 80px;
+    width: 80px;
+    overflow: hidden;
+    float: left;
+}
+
+.user-profile-info {
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+    color: #222 !important;
+    padding: 0 10px 10px !important;
+    white-space: normal;
+    width: 200px;
+}
+
+.user-profile-name {
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.user-profile-email {
+    color: #03a9f4;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.user-profile-footer {
+    /*background: #03a9f4;*/
+    background: #f5f5f5;
+    border-top: 1px solid #e1e1e1;
+    /*border-color: rgba(0,0,0,.2);*/
+    padding: 10px 0;
+    width: 100%;
+    display: table;
+}
+
+.user-profile-switch {
+    float: left;
+    padding: 0 10px;
+}
+
+.user-profile-logout {
+    float: right;
+    padding: 0 10px;
+}
+
+    .user-profile-switch a, .user-profile-logout a { /*color:#fff !important;*/
+    }
+
+.margin-bottom-30 {
+    margin-bottom: 30px !important;
+}
+
+.height-150 {
+    height: 150px !important;
+}
+
+/* controlPointReports */
+
+.grid-report .k-grid-pager {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.grid-report {
+    width: 100%;
+    overflow: scroll;
+}
+
+/*TODO:uncomment after kendo bootstrap css test*/
+/*#incidentTemplateAddEditFormPanel span .k-combobox, #incidentTemplateAddEditForm span .k-combobox {
+    padding: 0 !important;
+}*/
+
+.custom-actions-right {
+    position: absolute !important;
+    top: 1px;
+    right: 200px;
+}
+
+.k-tabstrip > .k-content {
+    border: none !important;
+    background: none !important;
+}
+
+/*by Madhawee*/
+
+/*------------------------------------- INPUT FIELDS --------------------------------------*/
+
+/*TODO:uncomment after kendo bootstrap css test*/
+/*input, select .k-textbox, .k-autocomplete, .k-dropdown-wrap, .k-picker-wrap, .k-numeric-wrap {
+    background-color: #fafafa !important;
+    border-bottom: 1px solid #dadada;
+    box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+}
+
+textarea {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    resize: none;
+    overflow: hidden !important;
+    background-color: #fafafa !important;
+    border-bottom: 1px solid #dadada;
+    box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    width: 100%;
+}
+
+.k-numeric-wrap > .k-formatted-value {
+    background-color: #fafafa !important;
+    border-bottom: 1px solid #dadada !important;
+    box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-bottom: 2px solid #03a9f4 !important;
+}
+
+input:hover, select:hover, textarea:hover {
+    background-color: #fafafa !important;
+}
+
+.disable {
+    color: #9E9E9E !important;
+}
+
+.k-textbox, .k-autocomplete, .k-dropdown-wrap, .k-picker-wrap, .k-numeric-wrap {
+    background-color: #fafafa !important;
+    border-bottom: 1px solid #dadada;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+}
+
+    input:focus, select:focus, textarea:focus, .k-textbox:focus, .k-autocomplete:focus, .k-dropdown-wrap:focus, .k-picker-wrap:focus {
+        border-bottom: 2px solid #03a9f4 !important;
+        box-shadow: none !important;
+        -moz-box-shadow: none !important;
+        -webkit-box-shadow: none !important;
+    }
+
+    .k-autocomplete.k-state-border-down, .k-dropdown-wrap.k-state-active, .k-picker-wrap.k-state-active, .k-numeric-wrap.k-state-active { 
+        box-shadow: none !important;
+        -moz-box-shadow: none !important;
+        -webkit-box-shadow: none !important;
+    }*/
+
+/*TODO:uncomment after kendo bootstrap css test*/
+/*.k-dropdown .k-dropdown-wrap, .k-combobox .k-dropdown-wrap {
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom: 1px solid #dadada;
+    min-height: 32px;
+}
+
+.k-combobox .k-select, .k-picker-wrap .k-select, .k-numeric-wrap .k-select {
+    border: none !important;
+}
+
+.k-combobox .k-state-default .k-input {
+    border: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    padding: 2px .3em;
+    line-height: 1.6em;
+}
+
+.k-combobox .k-state-hover, .k-combobox .k-select:hover {
+    background: #fafafa !important;
+    background-position: 0 -10px;
+}
+.k-autocomplete.k-state-default .k-input, .k-combobox .k-input, .k-slider-track, .k-slider-selection, .k-progress-status-wrap {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border-bottom: none !important;
+    background-color: #fafafa !important;
+}
+
+.k-picker-wrap.k-state-default .k-input {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.k-picker-wrap input {
+    border-bottom: none !important;
+}
+
+.k-list-container, .k-popup, .k-group, .k-reset {
+    margin-top: 3px !important;
+}
+
+.required > .k-invalid {
+    border-bottom: 2px solid #e91e63 !important;
+}
+
+.k-combobox .k-dropdown-wrap > .k-invalid {
+    border-bottom: 2px solid #e91e63 !important;
+}
+
+.k-textbox .k-invalid, .k-autocomplete .k-invalid, input .k-invalid, select .k-invalid, textarea .k-invalid {
+    border-bottom: 2px solid red !important;
+}
+
+.k-dropdown .k-dropdown-wrap .k-invalid, .k-combobox .k-dropdown-wrap .k-invalid {
+    border-bottom: 2px solid red !important;
+}
+
+.k-widget.k-combobox {
+    margin-bottom: 15px;
+    background-color: #fafafa !important;
+}
+
+.multiselect-wrap, .k-multiselect-wrap {
+    background-color: #fafafa !important;
+    border-bottom: 1px solid #dadada;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+    .k-multiselect-wrap .k-input {
+        width: 100% !important;
+    }
+
+.btn-primary {
+    background-color: #03a9f5 !important;
+}*/
+
+/*search field*/
+.drawer-header .search-input {
+    background: white !important;
+    border: none !important; /*padding:19px !important;*/
+    height: 38px !important;
+}
+
+.btn-white {
+    background-color: #ffffff;
+    border-color: none !important;
+    border: none !important;
+    font-size: 18px !important;
+    color: #757575 !important;
+}
+
+.input-group-search {
+    box-shadow: -1px 3px 4px -3px rgba(0, 0, 0, 0.26) !important;
+    width: 90% !important;
+}
+
+.search-heading {
+    padding-bottom: 25px;
+}
+
+/*tree view*/
+.app-tree-body ul li div, .app-tree-body ul li div .k-icon {
+    color: #212121 !important;
+}
+
+.app-tree-body .k-in.k-state-selected, .app-tree-body .k-in.k-state-focused {
+    width: 100% !important;
+}
+
+.tree-view {
+    background: #f5f5f5;
+}
+/*------------------------------------- validation--------------------------------------*/
+
+.k-widget.k-tooltip-validation {
+    background-color: transparent !important;
+    color: #e91e63 !important;
+    float: right;
+}
+
+span > .k-warning {
+    display: none !important;
+}
+
+/*.k-textbox:hover {border:none !important;}*/
+/*.form-group > div > span.k-tooltip, .form-group > div > span > span.k-tooltip{display:none !important;}*/
+
+/*------------------------------------- Insident Template settings --------------------------------------*/
+
+/*TODO:uncomment after kendo bootstrap css test*/
+/*.k-widget, .k-block, .k-inline-block, .k-draghandle {
+    border: none !important;
+}*/
+
+.app-settings-areas {
+    background-color: #fff;
+    border: 1px solid #f5f5f5;
+    border-radius: 3px;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.09);
+    margin-bottom: 15px;
+    padding: 10px;
+    min-height: 65px;
+}
+
+/*------------------------------------- Sliding Trays --------------------------------------*/
+
+.tray-1-1 .tray-inner, .tray-1-2 .tray-inner, .tray-1-2-sp .tray-inner {
+    background: #fafafa !important;
+}
+
+.tray-1-1 .tray-header, .tray-1-2 .tray-header, .tray-1-2-sp .tray-header {
+    background: #fafafa !important;
+}
+
+.tray-1-1 .tray-footer, .tray-1-2 .tray-footer, .tray-1-2-sp .tray-footer {
+    background: #fafafa !important;
+}
+
+.tray-1-1 .tray-inner, .tray-1-2 .tray-inner, .tray-1-2-sp .tray-inner {
+    padding: 30px;
+    color: #212121;
+    height: 100%;
+}
+
+/*------------------------------------- NEW Sliding Trays --------------------------------------*/
+
+.drawer {
+    background-color: #fafafa;
+    position: fixed;
+    overflow: hidden;
+    height: 100%;
+    top: 0;
+    right: 0;
+    margin-top: 60px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    padding: 30px;
+    color: #212121;
+}
+
+.drawer-main {
+    width: 60%;
+    z-index: 25000;
+}
+    /*!important;*/
+    .drawer-main .drawer-footer {
+        z-index: 25000;
+    }
+
+.drawer-sub {
+    width: 40% !important;
+    z-index: 25010 !important;
+}
+
+.drawer-sub-extra {
+    width: 50% !important;
+    z-index: 25015 !important;
+}
+
+.drawer-sub .drawer-footer {
+    z-index: 25010 !important;
+}
+
+.drawer-special {
+    width: 35%;
+    z-index: 25015;
+}
+
+    .drawer-special .drawer-footer {
+        z-index: 25015 !important;
+    }
+
+.drawer-notification {
+    width: 30% !important;
+    z-index: 25016 !important;
+}
+
+    .drawer-notification .drawer-footer {
+        z-index: 25016 !important;
+    }
+
+.drawer-header { /*position: relative;  top: 0;  right: 0; position:fixed;*/
+    width: 100%;
+    background: none;
+    font-size: 24px;
+    margin: 0px;
+    line-height: 24px;
+}
+
+.drawer-content {
+    margin-top: 25px;
+    overflow-y: inherit !important;
+    overflow-x: hidden;
+}
+
+.drawer-footer { /*position: fixed;*/
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: right;
+    float: right;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.50);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.overlay-main {
+    z-index: 25000;
+}
+
+.overlay-sub {
+    z-index: 25010;
+}
+
+.overlay-sub-extra {
+    z-index: 25015;
+}
+
+.overlay-special {
+    z-index: 25015;
+}
+
+.overlay-notification {
+    z-index: 25016;
+}
+/*div[id^='ascrail'] { display: block; }*/
+/*div[id='ascrail2002'] { display: block !important; }*/
+
+.drawer-r-o-area {
+    background: #eeeeee none repeat scroll 0 0;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.drawer-r-o-area-a {
+    background: transparent none repeat scroll 0 0;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+/*------------------------------------- Pagination  --------------------------------------*/
+
+.k-pager-wrap .k-link {
+    background: none !important;
+    border-color: none !important;
+    border: none !important;
+}
+
+.k-pager-wrap > .k-link {
+    border: none !important;
+}
+/*.app-grid-admin-a .k-state-selected, .app-grid-admin-a .k-alt.k-state-selected {background-color: #ddd !important; color: #333 !important;}*/
+.k-pager-numbers .k-state-selected {
+    border: none !important;
+}
+
+/*------------------------------------- Kendo UI tab  --------------------------------------*/
+
+/*.app-header-secondary table td{color: #333 !important;font-size: 16px !important;font-weight: 300 !important;}
+.app-header-secondary table th{color: #333 !important;font-size: 16px !important;font-weight: 300 !important;}
+.k-grid-header th.k-header > .k-link{color: #333 !important;font-size: 16px !important;font-weight: 400 !important;}
+.app-header-secondary .k-grouping-header{color: #333 !important;font-size: 16px !important;font-weight: 300 !important;}
+.app-grid-admin-a .k-grid-header {border-bottom: medium none !important;}
+.k-tabstrip > .k-content, .k-panelbar .k-tabstrip > .k-content {padding: 15px 0 30px 0 !important;}*/
+
+/*------------------------------------- Bootstrap tab  --------------------------------------*/
+
+.nav-tabs {
+    border: none !important;
+}
+
+    .nav-tabs > li > a {
+        border: none !important;
+    }
+
+    .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+        border-bottom: 4px solid #03a9f5 !important;
+        background: none !important;
+        border-top: none !important;
+        border-left: none !important;
+        border-right: none !important;
+    }
+
+    .nav-tabs > li > a {
+        font-size: 16px !important;
+        color: #222 !important;
+        padding: 18px 30px 10px !important;
+        transition: width 200ms linear 0s;
+        animation: 0s ease 0s normal none 1 running none;
+    }
+
+        .nav-tabs > li > a:hover, .nav-tabs > li > a:focus {
+            background: none !important;
+            border-bottom: 3px solid #fafafa !important;
+            border-top: none !important;
+            border-left: none !important;
+            border-right: none !important;
+        }
+
+.tab-content {
+    padding: 40px 0;
+}
+
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+    color: #fff !important;
+    background-color: #03a9f4 !important;
+}
+
+.dropdown-menu > li > a {
+    padding: 15px 20px !important;
+}
+
+    .dropdown-menu > li > a:hover {
+        background: #f5f5f5 !important;
+        color: #212121 !important;
+    }
+
+.dropdown-menu {
+    padding: 0 !important;
+    background: #fafafa !important;
+}
+
+.nav-tabs .dropdown-menu {
+    margin-top: -55px !important;
+}
+
+
+.drawer-tab {
+    position: absolute !important;
+    margin-top: -30px;
+}
+
+    .drawer-tab > .nav-tabs {
+        background: #424242;
+        margin-left: -45px;
+        padding-left: 30px;
+    }
+        .drawer-tab > .nav-tabs > li {
+            margin-bottom:0 !important;
+        }
+        .drawer-tab > .nav-tabs > li.active > a {
+            color: #fff !important;
+            border-bottom: 4px solid #03a9f5 !important;
+            font-weight:500;
+        }
+
+        .drawer-tab > .nav-tabs > li > a {
+            color: #79847c !important;
+            border-bottom: 3px solid #424242 !important ;
+        }
+        .drawer-tab > .nav-tabs > li > a:link {
+            color: #fff !important;
+            border-bottom: 3px solid #424242 ;
+        }
+/*.drawer-tab > .nav-tabs > li > a:hover {border-bottom: 3px solid #424242 !important; }*/
+.header-with-tab {
+    margin-top: 46px;
+}
+
+.drawer-tab-content {
+    margin-top: 30px;
+    overflow-y: inherit !important;
+    overflow-x: hidden;
+}
+
+
+.content-with-tab {
+    padding: 0 !important;
+}
+
+
+
+/*------------------------------------- Charts --------------------------------------*/
+
+.k-chart svg {
+    overflow: visible !important;
+}
+
+/*------------------------------------- user card view --------------------------------------*/
+
+.k-animation-container, .k-widget, .k-widget *, .k-animation-container *, .k-widget *:before, .k-animation-container *:after, .k-block .k-header, .k-list-container {
+    box-sizing: inherit !important;
+    -webkit-box-sizing: inherit !important;
+}
+
+#divMainRow .app-user-cards {
+    padding-top: 20px;
+    width: 100%;
+}
+
+#deparmentCards .app-user-cards {
+    padding-top: 20px;
+    width: 100%;
+}
+
+#divAssignedToMe .app-user-cards {
+    padding-top: 20px;
+    width: 100%;
+}
+
+/*.attchment-icon {
+    color: #757575;
+    font-size: 24px !important;
+}*/
+
+.true {
+    visibility: visible;
+}
+
+.false {
+    visibility: hidden;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.on-off-card {
+    margin-left: -10px;
+}
+
+    .on-off-card > .k-button[disabled], .on-off-card > .k-state-disabled .k-button:active, .on-off-card > .k-button.k-state-disabled:active, .on-off-card > .k-button[disabled]:hover {
+        background: none !important;
+        border: 2px dashed #e8e8e8 !important;
+        color: #ccc !important;
+    }
+
+    .on-off-card > .k-button {
+        background: none !important;
+        border: 2px dashed #e8e8e8 !important;
+        color: #03a9f4 !important;
+    }
+
+        .on-off-card > .k-button:hover {
+            border-color: #03a9f4 !important;
+            cursor: pointer !important;
+        }
+
+
+/*------------------------------------- mini sidebar menu --------------------------------------*/
+
+#mini-sidebar-menu {
+    margin-right: 10px;
+    padding-top: 10px;
+    float: right;
+    margin-top: 60px;
+}
+
+    #mini-sidebar-menu li {
+        position: relative;
+        margin: 10px 0 10px;
+        font-size: 21px;
+        color: #212121 !important;
+    }
+
+/*#mainLeftMenu {
+    margin-top: 60px !important;
+}*/
+
+#mini-sidebar-menu li a {
+    color: #757575;
+}
+
+    #mini-sidebar-menu li a:hover {
+        color: #000 !important;
+    }
+
+    #mini-sidebar-menu li a .k-state-focused {
+        background: none !important;
+        box-shadow: none !important;
+        color: red !important;
+    }
+
+#mini-sidebar-menu .k-state-focused {
+    background: none !important;
+    box-shadow: none !important;
+    color: #03a9f5 !important;
+}
+
+#mini-sidebar-menu div.divider {
+    height: 1px;
+    margin: 15px -8px 15px -12px;
+    width: 46px; /*position: absolute;*/
+    overflow: hidden;
+    background-color: #ccc !important;
+}
+/*------------------------------------- main sidebar menu --------------------------------------*/
+
+.main-sidebar-icon {
+    /*color: #757575;
+    font-size: 20px !important;*/
+    padding-right: 10px;
+    width: 30px;
+    padding-top: 9px;
+}
+
+.k-state-highlight .main-sidebar-icon, k-state-selected .main-sidebar-icon, .k-state-active .k-header .main-sidebar-icon {
+    color: #fff;
+    font-size: 20px;
+}
+
+/*------------------------------------- file upload popup --------------------------------------*/
+
+/*.k-dropzone {
+    background: #03a9f5;
+}
+
+    .k-dropzone .k-upload-status, .file-upload-control .k-button {
+        color: #fff !important;
+    }*/
+
+.mr-top-10 {
+    margin-top: 10px !important;
+}
+
+.mr-top-5 {
+    margin-top: 5px !important;
+}
+
+/*------------------------------------- file download --------------------------------------*/
+
+.btn-file-dl {
+    position: absolute;
+    top: 122px;
+    right: 0px;
+}
+
+/*------------------------------- responsive tab --------------------------------*/
+
+.nav-tabs li.hide {
+    opacity: 0;
+}
+
+.nav-tabs li.show {
+    opacity: 1;
+}
+
+/*------------------------------- dropdown tab --------------------------------*/
+
+#tabContrainer > span.k-dropdown, #tabContrainer > span.k-dropdown > span.k-dropdown-wrap {
+    border: none;
+    font-size: 16px;
+}
+
+#tabContrainer > span.k-dropdown {
+    padding: 6px 30px 2px !important;
+    border-bottom: 4px solid #03a9f5 !important;
+    margin-top: -8px;
+    border-radius: 0;
+}
+
+/*.k-filter-menu{transform: translateX(-30px) !important;}*/
+
+/*------------------------------- email settngs --------------------------------*/
+
+.emailset-dy-form {
+    box-shadow: -10px 4px 8px -9px rgba(0,0,0,0.26);
+    padding: 25px 0px 0 20px;
+    margin-top: -15px;
+}
+
+#logManager {
+    padding-top: 1px;
+    background: #fafafa;
+    clear: both;
+}
+
+.btnlogManagerForm {
+    margin: 5px 5px 0 !important;
+}
+
+#logManagerForm > textarea {
+    width: 480px;
+    height: 200px;
+}
+
+/*------------------------------- tree view filter dropdown --------------------------------*/
+
+.treeview-filter-dropdown {
+    position: absolute;
+    z-index: 20000;
+    min-width: 200px;
+    background-color: whitesmoke;
+    padding: 5px 7px 7px !important;
+    overflow: hidden;
+    margin-top: -10px !important;
+}
+
+
+/*Buddhika*/
+
+div.callout {
+    background-color: #fff;
+    position: relative;
+    color: #000000;
+    padding: 10px 10px 0 10px;
+    border-radius: 0;
+    border-left: 4px solid #03a9f4;
+    box-shadow: 1px 1px 5px 0 #ddd;
+    /*margin: -1px 0 0 0;*/
+    min-height: 50px;
+}
+
+.callout::before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    border: 0.8em solid transparent;
+    position: absolute;
+}
+
+.callout.top::before {
+    left: 45%;
+    bottom: -20px;
+    border-top: 10px solid #68caf8;
+}
+
+
+.user-info {
+    font-size: 9pt;
+    font-style: italic;
+    color: #797979;
+}
+
+.log-text {
+    text-align: left !important;
+}
+
+.log-info {
+    text-align: right !important;
+    position: relative;
+    font-size: 9pt;
+    color: #797979;
+}
+
+
+.Initial-loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10005;
+    margin-left: -17.5px;
+    margin-top: -17.5px;
+    background-size: contain;
+    color: dodgerblue;
+    height: 70px;
+    width: 70px;
+    animation: elastic-rotation 1.33s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /*background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHdpZHRoPScxOThweCcgaGVpZ2h0PScxOThweCcgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgY2xhc3M9InVpbC1pbmYiPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiBmaWxsPSJub25lIiBjbGFzcz0iYmsiPjwvcmVjdD48cGF0aCBpZD0idWlsLWluZi1wYXRoIiBkPSJNMjQuMywzMEMxMS40LDMwLDUsNDMuMyw1LDUwczYuNCwyMCwxOS4zLDIwYzE5LjMsMCwzMi4xLTQwLDUxLjQtNDAgQzg4LjYsMzAsOTUsNDMuMyw5NSw1MHMtNi40LDIwLTE5LjMsMjBDNTYuNCw3MCw0My42LDMwLDI0LjMsMzB6IiBmaWxsPSJub25lIiBzdHJva2U9IiNjMGJiOWMiIHN0cm9rZS13aWR0aD0iMXB4IiBzdHJva2UtZGFzaGFycmF5PSI1cHgiPjwvcGF0aD48Y2lyY2xlIGN4PSIwIiBjeT0iMCIgcj0iNSIgZmlsbD0iIzY1Y2FmOCI+PGFuaW1hdGVNb3Rpb24gYmVnaW49IjBzIiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSI+PG1wYXRoIHhsaW5rOmhyZWY9IiN1aWwtaW5mLXBhdGgiPjwvbXBhdGg+PC9hbmltYXRlTW90aW9uPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSI1IiBmaWxsPSIjNjVjYWY4Ij48YW5pbWF0ZU1vdGlvbiBiZWdpbj0iMC4wOHMiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIj48bXBhdGggeGxpbms6aHJlZj0iI3VpbC1pbmYtcGF0aCI+PC9tcGF0aD48L2FuaW1hdGVNb3Rpb24+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMCIgY3k9IjAiIHI9IjUiIGZpbGw9IiM2NWNhZjgiPjxhbmltYXRlTW90aW9uIGJlZ2luPSIwLjE2cyIgZHVyPSIxcyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiPjxtcGF0aCB4bGluazpocmVmPSIjdWlsLWluZi1wYXRoIj48L21wYXRoPjwvYW5pbWF0ZU1vdGlvbj48L2NpcmNsZT48Y2lyY2xlIGN4PSIwIiBjeT0iMCIgcj0iNSIgZmlsbD0iIzY1Y2FmOCI+PGFuaW1hdGVNb3Rpb24gYmVnaW49IjAuMjVzIiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSI+PG1wYXRoIHhsaW5rOmhyZWY9IiN1aWwtaW5mLXBhdGgiPjwvbXBhdGg+PC9hbmltYXRlTW90aW9uPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSI1IiBmaWxsPSIjNjVjYWY4Ij48YW5pbWF0ZU1vdGlvbiBiZWdpbj0iMC4zM3MiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIj48bXBhdGggeGxpbms6aHJlZj0iI3VpbC1pbmYtcGF0aCI+PC9tcGF0aD48L2FuaW1hdGVNb3Rpb24+PC9jaXJjbGU+PC9zdmc+);*/
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9Il94MzhfU0VMRUNUX0xvZ28iIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMzEuOSAxNi4zIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAzMS45IDE2LjMiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxwYXRoIGQ9Ik0yOS41LDIuNGMxLjYsMS42LDIuNCwzLjUsMi40LDUuOHMtMC44LDQuMi0yLjQsNS44Yy0xLjYsMS42LTMuNSwyLjQtNS44LDIuNGMtMS4zLDAtMi41LTAuNC0zLjgtMS4xYy0xLjItMC43LTIuMS0xLjQtMi42LTJjLTAuNS0wLjYtMC44LTEtMC45LTEuMmMtMC40LTAuNi0wLjMtMS4xLDAuMi0xLjRjMC42LTAuNCwxLjEtMC4zLDEuNSwwLjJjMCwwLjEsMC4yLDAuNCwwLjcsMC45YzAuNCwwLjUsMS4xLDEuMSwyLjEsMS42YzAuOSwwLjYsMS45LDAuOSwyLjgsMC45YzEuNywwLDMuMS0wLjYsNC4zLTEuOGMxLjItMS4yLDEuOC0yLjYsMS44LTQuM3MtMC42LTMuMS0xLjgtNC4zYy0xLjItMS4yLTIuNi0xLjgtNC4zLTEuOGMtMC44LDAtMS43LDAuNC0yLjYsMS4yUzE5LjUsNC43LDE5LDUuNGMtMC41LDAuNy0xLjIsMS44LTIuMiwzLjNjLTAuOCwxLjItMS40LDIuMi0xLjksMi44Yy0wLjUsMC42LTEuMSwxLjQtMS44LDIuM2MtMC44LDAuOS0xLjUsMS41LTIuMywxLjljLTAuOCwwLjQtMS42LDAuNi0yLjYsMC42Yy0yLjMsMC00LjItMC44LTUuOC0yLjRTMCwxMC40LDAsOC4yQzAsNS45LDAuOCw0LDIuNCwyLjRTNS45LDAsOC4yLDBDMTEsMCwxMy4zLDEuNywxNSw1LjJjMC4yLDAuNywwLjEsMS4xLTAuNiwxLjRDMTMuOCw2LjgsMTMuMyw2LjYsMTMsNkwxMi41LDVjLTAuMy0wLjctMC45LTEuMy0xLjctMnMtMS43LTEtMi42LTFDNi42LDIuMSw1LjEsMi43LDQsMy45UzIuMiw2LjUsMi4yLDguMnMwLjYsMy4xLDEuOCw0LjNzMi42LDEuOCw0LjMsMS44YzAuOCwwLDEuNy0wLjQsMi42LTEuMnMxLjYtMS41LDIuMS0yLjFjMC41LTAuNywxLjItMS44LDIuMi0zLjNjMC44LTEuMiwxLjQtMi4yLDEuOS0yLjhzMS4xLTEuNCwxLjgtMi4zczEuNS0xLjUsMi4zLTEuOUMyMS45LDAuMiwyMi43LDAsMjMuNiwwQzI1LjksMCwyNy45LDAuOCwyOS41LDIuNHoiLz48L2c+PC9zdmc+);
+}
+
+/*Gayan G*/
+.template-description ul li {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.k-dropdown .k-dropdown-wrap {
+    border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -o-border-radius: 0 !important;
+}
+
+.language-combo .k-dropdown-wrap {
+    border-radius: 60px !important;
+    -moz-border-radius: 60px !important;
+    -webkit-border-radius: 60px !important;
+    -o-border-radius: 60px !important;
+}
+
+/*TODO:uncomment after kendo bootstrap css test*/
+/*.k-block, .k-button, .k-textbox, .k-drag-clue, .k-touch-scrollbar, .k-window, .k-window-titleless .k-window-content, .k-window-action, .k-inline-block, .k-grid .k-filter-options, .k-grouping-header .k-group-indicator, .k-autocomplete, .k-multiselect, .k-combobox, .k-dropdown, .k-dropdown-wrap, .k-datepicker, .k-timepicker, .k-colorpicker, .k-datetimepicker, .k-notification, .k-numerictextbox, .k-picker-wrap, .k-numeric-wrap, .k-colorpicker, .k-list-container, .k-calendar-container, .k-calendar td, .k-calendar .k-link, .k-treeview .k-in, .k-editor-inline, .k-tooltip, .k-tile, .k-slider-track, .k-slider-selection, .k-upload {
+    border-radius:0 !important;
+    -moz-border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -o-border-radius: 0 !important;
+}*/
+
+@keyframes elastic-rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/*body {
+  background: #ffffff;
+}*/
+
+.dots {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    outline: 1px solid red;
+    -webkit-filter: url(#goo);
+    /*filter: url(#goo);*/
+    z-index: 10004;
+}
+
+.dot {
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+    .dot:before {
+        content: '';
+        width: 35px;
+        height: 35px;
+        border-radius: 50px;
+        background: #028CC8;
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+        margin-left: -17.5px;
+        margin-top: -17.5px;
+    }
+
+@-webkit-keyframes dot-move {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    18%, 22% {
+        -webkit-transform: translateY(-70px);
+        transform: translateY(-70px);
+    }
+
+    40%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes dot-move {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    18%, 22% {
+        -webkit-transform: translateY(-70px);
+        transform: translateY(-70px);
+    }
+
+    40%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes dot-colors {
+    0% {
+        background-color: #028CC8;
+    }
+
+    25% {
+        background-color: #03A9F4;
+    }
+
+    50% {
+        background-color: #79D6FF;
+    }
+
+    75% {
+        background-color: #31BFFC;
+    }
+
+    100% {
+        background-color: #028CC8;
+    }
+}
+
+@keyframes dot-colors {
+    0% {
+        background-color: #028CC8;
+    }
+
+    25% {
+        background-color: #03A9F4;
+    }
+
+    50% {
+        background-color: #79D6FF;
+    }
+
+    75% {
+        background-color: #31BFFC;
+    }
+
+    100% {
+        background-color: #028CC8;
+    }
+}
+
+.dot:nth-child(5):before {
+    z-index: 10007;
+    width: 45.5px;
+    height: 45.5px;
+    margin-left: -22.75px;
+    margin-top: -22.75px;
+    -webkit-animation: dot-colors 4s ease infinite;
+    animation: dot-colors 4s ease infinite;
+}
+
+@-webkit-keyframes dot-rotate-1 {
+    0% {
+        -webkit-transform: rotate(-105deg);
+        transform: rotate(-105deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(270deg);
+        transform: rotate(270deg);
+    }
+}
+
+@keyframes dot-rotate-1 {
+    0% {
+        -webkit-transform: rotate(-105deg);
+        transform: rotate(-105deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(270deg);
+        transform: rotate(270deg);
+    }
+}
+
+.dot:nth-child(1) {
+    -webkit-animation: dot-rotate-1 4s 0s linear infinite;
+    animation: dot-rotate-1 4s 0s linear infinite;
+}
+
+    .dot:nth-child(1):before {
+        background-color: #03A9F4;
+        -webkit-animation: dot-move 4s 0s ease infinite;
+        animation: dot-move 4s 0s ease infinite;
+    }
+
+@-webkit-keyframes dot-rotate-2 {
+    0% {
+        -webkit-transform: rotate(165deg);
+        transform: rotate(165deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(540deg);
+        transform: rotate(540deg);
+    }
+}
+
+@keyframes dot-rotate-2 {
+    0% {
+        -webkit-transform: rotate(165deg);
+        transform: rotate(165deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(540deg);
+        transform: rotate(540deg);
+    }
+}
+
+.dot:nth-child(2) {
+    -webkit-animation: dot-rotate-2 4s 1s linear infinite;
+    animation: dot-rotate-2 4s 1s linear infinite;
+}
+
+    .dot:nth-child(2):before {
+        background-color: #79D6FF;
+        -webkit-animation: dot-move 4s 1s ease infinite;
+        animation: dot-move 4s 1s ease infinite;
+    }
+
+@-webkit-keyframes dot-rotate-3 {
+    0% {
+        -webkit-transform: rotate(435deg);
+        transform: rotate(435deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(810deg);
+        transform: rotate(810deg);
+    }
+}
+
+@keyframes dot-rotate-3 {
+    0% {
+        -webkit-transform: rotate(435deg);
+        transform: rotate(435deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(810deg);
+        transform: rotate(810deg);
+    }
+}
+
+.dot:nth-child(3) {
+    -webkit-animation: dot-rotate-3 4s 2s linear infinite;
+    animation: dot-rotate-3 4s 2s linear infinite;
+}
+
+    .dot:nth-child(3):before {
+        background-color: #31BFFC;
+        -webkit-animation: dot-move 4s 2s ease infinite;
+        animation: dot-move 4s 2s ease infinite;
+    }
+
+@-webkit-keyframes dot-rotate-4 {
+    0% {
+        -webkit-transform: rotate(705deg);
+        transform: rotate(705deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(1080deg);
+        transform: rotate(1080deg);
+    }
+}
+
+@keyframes dot-rotate-4 {
+    0% {
+        -webkit-transform: rotate(705deg);
+        transform: rotate(705deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(1080deg);
+        transform: rotate(1080deg);
+    }
+}
+
+.dot:nth-child(4) {
+    -webkit-animation: dot-rotate-4 4s 3s linear infinite;
+    animation: dot-rotate-4 4s 3s linear infinite;
+}
+
+    .dot:nth-child(4):before {
+        background-color: #028CC8;
+        -webkit-animation: dot-move 4s 3s ease infinite;
+        animation: dot-move 4s 3s ease infinite;
+    }
+
+
+.agreement span ul {
+    list-style-type: initial;
+    padding-left: 40px;
+}
+
+    .agreement span ul li {
+        list-style: initial;
+    }
+/*------------------------------------- Home page card view --------------------------------------*/
+
+/*.vertical-card-label {    background: green;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;}*/
+
+.home-page .app-user-cards .product-view {
+    -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.29) !important;
+    -moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.29) !important;
+    box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.29) !important;
+}
+
+/*.app-user-cards .product-view {
+    min-height: 186px;
+    overflow: hidden;
+}
+
+    .app-user-cards .product-view:hover {
+        box-shadow: 3px 3px 10px #888888 !important;
+    }*/
+
+.home-page .app-user-cards .product-view .card-value {
+    margin-bottom: 5px !important;
+}
+
+/*.vertical-text {
+    transform: rotate(-90deg);
+    transform-origin: left bottom 0;
+    height: 30px;
+    padding: 4px 10px !important;
+    position: absolute;
+    width: 186px;
+    bottom: 0;
+    left: 45px;
+    top: 156px;
+    z-index: 10;
+}*/
+
+/*.c_cp, .c_i, .c_p, .c_t, .c_s {
+    display: none;
+}*/
+
+/*.app-user-cards .vertical-text .controlpoint {
+    background-color: #FFC90E;
+    height: 30px;
+    padding: 4px 10px !important;
+    position: absolute;
+    width: 186px;
+    bottom: 0;
+    left: 0;
+    top: 0;
+}
+
+.app-user-cards .vertical-text .incident {
+    background-color: #F15058;
+    height: 30px;
+    padding: 4px 10px !important;
+    position: absolute;
+    width: 186px;
+    bottom: 0;
+    left: 0;
+    top: 0;
+}
+
+.app-user-cards .vertical-text .project {
+    background-color: #0091D7;
+    height: 30px;
+    padding: 4px 10px !important;
+    position: absolute;
+    width: 186px;
+    bottom: 0;
+    left: 0;
+    top: 0;
+}
+
+.app-user-cards .vertical-text .projecttask {
+    background-color: #22B14C;
+    height: 30px;
+    padding: 4px 10px !important;
+    position: absolute;
+    width: 186px;
+    bottom: 0;
+    left: 0;
+    top: 0;
+}
+
+.app-user-cards .vertical-text .surveys {
+    background-color: #C3C3C3;
+    height: 30px;
+    padding: 4px 10px !important;
+    position: absolute;
+    width: 186px;
+    bottom: 0;
+    left: 0;
+    top: 0;
+}*/
+
+/*.vertical-text .controlpoint .c_cp, .vertical-text .incident .c_i, .vertical-text .project .c_p,
+.vertical-text .projecttask .c_t, .vertical-text .survey .c_s {
+    color: #fff;
+    display: block !important;
+}*/
+
+
+.notification {
+    z-index: 300001;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    padding: 16px !important;
+}
+
+.alert .close {
+    margin-top: 0;
+}
+
+/*Buddhika*/
+.k-textbox .k-icon {
+    position: static !important;
+}
+
+input.k-textbox {
+    height: 33px !important;
+}
+
+textarea.k-textbox {
+  min-height: 50px !important;
+    overflow: hidden;
+    text-indent: 0 !important;
+    padding: 5px 10px !important;
+}
+
+.k-header {
+    background-color: #fafafa;
+    border-color: transparent;
+}
+
+#divRichEditor {
+    margin-left: -5px;
+}
+
+.k-widget.k-tooltip-validation {
+    border-color: transparent;
+}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    /*padding-right: 0 !important;*/
+    padding-left: 15px;
+}
+
+.drawer-footer {
+    margin-top: 7px;
+}
+
+/*.k-i-arrow-s {
+    background-position: 0 -35px;
+}
+
+.k-state-hover > * > .k-i-arrow-s {
+    background-position: -16px -35px;
+}*/
+
+
+
+[disabled].k-button, .k-button.k-state-disabled, .k-state-disabled .k-button, .k-state-disabled .k-button:hover, .k-button.k-state-disabled:hover, .k-state-disabled .k-button:active, .k-button.k-state-disabled:active {
+    background-color: transparent;
+}
+
+
+span .k-textbox .control-width .disable {
+    padding-left: 10px !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+
+.log-attachment-buttons-right {
+    margin-right: 15px;
+}
+
+.drawer-tab-inner-content {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.k-invalid-msg {
+    white-space: normal;
+    text-align: left;
+}
+
+.tooltip {
+    position: fixed !important;
+}
+
+.tooltip-inner {
+    /* max-width: 350px;
+     If max-width does not work, try using width instead 
+    width: 350px;*/
+    font-size: 16px;
+}
+
+/*Madhawee*/
+textarea {
+    -ms-border-radius: 4px !important;
+    border-radius: 4px !important;
+}
+
+.k-tabstrip:focus {
+    -webkit-box-shadow: none !important;
+    -ms-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+#tabContrainer .k-textbox:focus, #tabContrainer .k-dropdown-wrap.k-state-focused {
+    box-shadow: none !important;
+}
+
+#tabContrainer .k-dropdown-wrap.k-state-default {
+    background-color: #fafafa !important;
+}
+
+.k-textbox .k-icon {
+    margin: 0 !important;
+}
+
+.k-dropdown-wrap .k-input {
+    line-height: 26px !important;
+}
+
+.k-grid-content {
+    -ms-overflow-style:-ms-autohiding-scrollbar !important;
+}
+#pageLoader .dots, #pageLoader .dots .dot {
+    z-index: 10009 !important;
+    background: red !important;
+}
+
+.btn-group > .btn-default:focus, .btn-group > .btn-default.active {
+    background: #428bca !important;
+    border-color: #428bca !important;
+    color: #fff !important;
+    font-size: 15px;
+}
+
+.btn-default {
+    background: #fff !important;
+    color: #428bca !important;
+    border-color: #ccc !important;
+    font-size: 15px !important;
+}
+
+.k-list-container{-ms-overflow-style:auto !important;}
+
+/*ImprovementDBSignRules*/
+
+.text-to-right {
+    text-align: right !important;
+}
+/*.grid-ImprovementDB{height:200px; overflow-x:hidden; overflow-y:scroll;}*/
+.k-grid-content > table > tbody { /*height:200px !important;*/
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.panel-body {
+    padding: 0 15px !important;
+}
+
+a.collapsed .show-content {
+    display: inline-block;
+}
+
+a.collapsed .hide-content {
+    display: none !important;
+}
+
+a .hide-content {
+    display: inline-block;
+}
+
+a .show-content {
+    display: none;
+}
+
+/*BJ*/
+.panel-body-child {
+    margin-left: 0 !important;
+    float: right !important;
+}
+
+.drawer-header .sub-title {
+    color: darkgrey;
+    font-size: 15px;
+    display: block;
+}
+.drawer-role{
+    width:40%;
+    z-index: 25000;
+}
+.roles-header{    width: 100%;
+    background: none;
+    font-size: 24px;
+    margin: 0px;
+    line-height: 24px;
+    padding-bottom:20px;
+}
+/*.roles-form {
+    box-shadow: -10px 4px 8px -9px rgba(0,0,0,0.26);
+    padding: 25px 0px 0 20px;
+    overflow-y: auto;  overflow-x: hidden;margin-top: 20px;
+}*/
+
+.agreement-subject{font-weight:400;}
+.agreement-description{font-size:12px !important;}
+.agreement-due-date{font-weight:400;font-size:12px !important;}
+#workListManagerList {border:none!important;}
+.work-list-prioratized{border-left: 4px solid red !important;}
+
+.es-text-align{display:inline-block; padding-left:10px; padding-top:6px;}
+
+.big-checkbox:checked:after {
+	font-size: 28px;
+	left: 6px;
+}
+
+
+.btn-transparent {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.incident-template-description{
+    border: 1px solid #666;
+    padding: 5px;
+    display: block;
+    border-radius: 5px;
+    font-style: italic;
+}
+
+.k-editable-area > .k-invalid-msg{
+    position: absolute;
+    display: block;
+    width: 100%;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.toast {
+    margin-left: 150px !important;
+}
+
+.k-numerictextbox .k-input {
+    height: 33px;
+}
+.k-combobox .k-input {
+    height: 33px !important;
+}
