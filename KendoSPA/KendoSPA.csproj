@@ -4184,15 +4184,6 @@
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.eot" />
-    <None Include="Properties\PublishProfiles\proaware-beta - FTP %282%29.pubxml" />
-    <None Include="Properties\PublishProfiles\proaware-beta - FTP.pubxml" />
-    <None Include="Properties\PublishProfiles\proaware-beta - Web Deploy %282%29.pubxml" />
-    <None Include="Properties\PublishProfiles\proaware-beta - Web Deploy.pubxml" />
-    <None Include="Properties\PublishProfiles\proaware-dev - FTP.pubxml" />
-    <None Include="Properties\PublishProfiles\proaware-dev - Web Deploy.pubxml" />
-    <None Include="Properties\PublishProfiles\proaware-incidents - FTP.pubxml" />
-    <None Include="Properties\PublishProfiles\proaware-incidents - Web Deploy.pubxml" />
-    <None Include="Properties\PublishProfiles\Proaware-kendoupdate - Web Deploy.pubxml" />
     <Content Include="Scripts\jasmine-samples\Player.js" />
     <Content Include="Scripts\jasmine-samples\PlayerSpec.js" />
     <Content Include="Scripts\jasmine-samples\Song.js" />
@@ -4834,7 +4825,6 @@
     <Content Include="Scripts\kendo\2016.2.504\messages\kendo.messages.zh-CN.min.js.map" />
     <Content Include="Scripts\kendo\2016.2.504\messages\kendo.messages.zh-HK.min.js.map" />
     <Content Include="Scripts\kendo\2016.2.504\messages\kendo.messages.zh-TW.min.js.map" />
-    <Content Include="Views\ProawareAdmin\Index.cshtml" />
     <Content Include="Scripts\jquery-2.2.4.min.map" />
     <Content Include="Scripts\kendo\2016.2.714\messages\kendo.messages.zh-TW.min.js.map" />
     <Content Include="Scripts\kendo\2016.2.714\messages\kendo.messages.zh-HK.min.js.map" />
@@ -5398,6 +5388,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\logs\" />
+    <Folder Include="Properties\PublishProfiles\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
